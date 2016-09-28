@@ -1,0 +1,36 @@
+{
+  "name": "kudos-api",
+  "version": "0.0.0",
+  "description": "An API for the 80|20 Kudos application",
+  "homepage": "https://github.com/Oceanview-Consulting/kudos-api",
+  "author": {
+    "name": "travisstokes",
+    "email": "travis@sysgineer.com"
+  },
+  "main": "server.js",
+  "keywords": [
+    "web-service",
+    "kudos",
+    "trails",
+    "trailsjs"
+  ],
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "convict": "^1.4.0",
+    "hapi": "^15.0.3",
+    "hapi-auth-bearer-token": "^4.3.0",
+    "jsonwebtoken": "^7.1.9",
+    "lodash": "^4.16.1",
+    "mysql": "^2.11.1",
+    "pg": "^6.1.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.24.3"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "repository": "git@github.com:Oceanview-Consulting/kudos-api.git",
+  "private": true
+}
