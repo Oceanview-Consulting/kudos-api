@@ -5,4 +5,5 @@ module.exports = controller;
 
 controller.main = function(request, reply) {
 	console.log(request.payload);
+	reply(request.payload);
 }
