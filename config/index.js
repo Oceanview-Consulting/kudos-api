@@ -23,7 +23,7 @@ var conf = convict({
     connectionString: {
         doc: "The database connection string",
         format: String,
-        env: "CONNECTION_STRING",
+        env: "DATABASE_URL",
         default: ''
     },
     initData: {
@@ -37,7 +37,7 @@ var conf = convict({
 
 // Load environment dependent configuration
 var env = conf.get('env');
-conf.loadFile('./config/' + env + '.json');
+conf.load(require('./' + env + '.js'));
 
 // Perform validation
 conf.validate({strict: true});

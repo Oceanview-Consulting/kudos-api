@@ -1,4 +1,0 @@
-{
-    "connectionString": "postgres://postgres:@localhost:5432/postgres",
-    "initData": false
-}
