@@ -2,7 +2,7 @@ const Hapi = require('hapi');
 const server = new Hapi.Server();
 const config = require('./config');
 
-server.connection({ host: config.get('host'), port: config.get('port')});
+server.connection({ port: config.get('port')});
 
 
 require('./data')(server, config)
