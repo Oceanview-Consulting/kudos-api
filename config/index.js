@@ -18,7 +18,7 @@ var conf = convict({
         doc: "The port to bind.",
         format: "port",
         default: 3000,
-        env: "PORT"
+        env: "$PORT"
     },
     connectionString: {
         doc: "The database connection string",
